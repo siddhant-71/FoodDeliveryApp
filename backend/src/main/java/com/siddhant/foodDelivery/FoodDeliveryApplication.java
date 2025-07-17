@@ -11,8 +11,7 @@ public class FoodDeliveryApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(FoodDeliveryApplication.class, args);
-		System.out.println("Food Delivery App Has been Started");
-		System.out.println(LocalDateTime.now());
+		System.out.println("Food Delivery App Has been Started at "+LocalDateTime.now());
 	}
 
 }
