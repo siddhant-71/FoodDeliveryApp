@@ -1,0 +1,86 @@
+.dish{
+    border: solid white 1px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    width: 75vw;
+    height: 200px;
+    gap: 10px;
+    padding: 10px;
+}
+.Dimg{
+    border-radius: 20px;
+    height: 100%;
+    width: 20%;
+    background-color: rgba(0, 255, 255, 0.139);
+}
+.Delete{
+    width: 20%;
+    border-radius: 20px;
+    background-color: red;
+}
+.DeleteBtn{
+    border: solid  1px white;
+    border-radius: 20px;
+    background-color: red;
+    width: 100%;
+}
+.DeleteBtn:hover{
+    transform: scale(1.1);
+}
+.Ddet{
+    border: 1px solid white;
+    background-color: rgb(67, 67, 67);
+    border-radius: 20px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Name{
+    padding-left:2vw;
+    font-size: 20px;
+    font-weight: 700;
+}
+.DishName{
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 2vw;
+}
+.Description{
+    padding-left: 5vw;
+}
+.Description p{
+    color:white;
+}
+.Price{
+    font-size: larger;
+    padding-left: 3vw;
+}
+.Foot{
+    height: 60px;
+    width: 75vw;
+    margin-bottom: 100px;
+}
+.Content{
+    height: 100%;
+    float:right;
+    display: flex;
+    gap: 29px;
+    flex-direction: row;
+}
+.total{
+    width: 12vw;
+    font-size: 25px;
+    align-content: center;
+    border: 1px solid beige;
+    border-radius: 10px;
+}
+.btnOrder{
+    width: 12vw;
+    font-size: 20px;
+    background-color: green;
+}

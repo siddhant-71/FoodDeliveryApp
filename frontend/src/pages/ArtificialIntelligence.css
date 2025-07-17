@@ -1,0 +1,42 @@
+.mega{
+    display: flex;
+    gap: 5px;
+    margin: 15px 0;
+}
+.block{
+    padding-top: 10px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    gap: 20px;
+    justify-content: start;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.block input{
+    background-color: rgb(156, 227, 255);
+    font-size: 18px;
+    padding-left: 30px;
+    color: black;
+    width: 30vw;
+}
+.block p{
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: rgb(0, 255, 17);
+}
+.block input::placeholder{
+    color: black;
+    padding-left: 0;
+}
+.Res{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(105, 174, 7, 0.648);
+    width: 55vw;
+    padding: 15px;
+    overflow-x: hidden;
+}

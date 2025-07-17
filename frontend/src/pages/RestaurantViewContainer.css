@@ -1,0 +1,36 @@
+.mainBox{
+    color:black;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    padding: 10px;
+    gap: 30px;
+    border-radius: 25px;
+    width: 85vw;
+}
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.one{
+    width: 60%;
+}
+.two{
+    width: 25%;
+}
+.three{
+    width: 15%;
+}
+.lower{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40%;
+}
+button{
+    background-color: rgb(156, 161, 83);
+    border: solid 1px black;
+    border-radius: 10px;
+}

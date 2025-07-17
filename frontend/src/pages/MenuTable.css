@@ -1,0 +1,27 @@
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table {
+    width: 100%;
+}
+.One{
+    width: 30%;
+}
+.Two{
+    width: 10%;
+}
+.Three{
+    width: 40%;
+}
+.Four{
+    width: 23%;
+}
+tr{
+    height: 30px;
+}
+.btn{
+    border: none;
+    background-color: rgb(9, 113, 9);
+    width: 100%;
+}
