@@ -9,30 +9,27 @@ const ArtificialIntelligence = ({AIisOn , setAIisOn}) => {
     const [three, setthree] = useState("")
     const [four, setfour] = useState("")
     const [five, setfive] = useState("")
-    const [six, setsix] = useState("")
-    const [seven, setseven] = useState("")
-    const [eight, seteight] = useState("")
-    const [nine, setnine] = useState("")
-    const [ten, setten] = useState("")
     const [response, setresponse] = useState("");
 
     const [loading, setloading] = useState(false);
     const [err, seterr] = useState(null)
     const [data, setdata] = useState("");
     async function generateReceipe() {
-        const question=`${one},${two},${three},${four},${five},${six},${seven},${eight},${nine},${ten} `;
+        const Ingredients=`${one},${two},${three},${four},${five} `;
         try{
             setloading(true);
             const url=`http://localhost:8080/api/ai/ask`;
-            const gotResponse=await axios.post(url,question);
+            const gotResponse=await axios.post(url,Ingredients);
             console.log(gotResponse.data.candidates[0].content.parts[0].text);
             setresponse(gotResponse.data.candidates[0].content.parts[0].text);
             setloading(false);
         }
         catch(e){
             console.log(e);
+            seterr(e)
         }
     }
+    if(err)return <p>Error Fetching data , please reload page and try again</p>
   return (
     <>
         <button style={{width:"20%",height:"50px",fontSize:"25px"}} onClick={()=>{setAIisOn(!AIisOn)}}>CLOSE AI</button>
